@@ -1,0 +1,55 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css")
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css")
+        link(rel="stylesheet" href="css/style.min.css")
+        title
+            | Title
+    body
+        nav.container.navbar.navbar-expand-lg.navbar-light.bg-light
+            a.navbar-brand(href="#")
+                | Navbar
+            button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+                span.navbar-toggler-icon
+
+            .collapse.navbar-collapse#navbarSupportedContent
+                ul.navbar-nav.mr-auto
+                    li.nav-item.active
+                        a.nav-link(href="#")
+                            | Home
+                    li.nav-item
+                        a.nav-link(href="#")
+                            | Link
+                    li.nav-item.dropdown
+                        a.nav-link.dropdown-toggle#navbarDropdown(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                            | Dropdown
+                        .dropdown-menu(aria-labelledby="navbarDropdown")
+                            a.dropdown-item(href="#")
+                                | Action
+                            a.dropdown-item(href="#")
+                                | Another action
+                            .dropdown-divider
+                            a.dropdown-item(href="#")
+                                | Something else here
+                    li.nav-item
+                        a.nav-link.disabled(href="#")
+                            | Disabled
+                form.form-inline.my-2.my-lg-0
+                    input.form-control.mr-sm-2(type="search" placeholder="Search" aria-label="Search")
+                    button.btn.btn-outline-success.my-2.my-sm-0(type="submit")
+                        | Search
+        .container
+            block content
+        .container
+            .row.mt-3.pt-3.border-top
+                .col
+                    p
+                        | Footer Content
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js")
+        script(src="js/scripts-min.js")
